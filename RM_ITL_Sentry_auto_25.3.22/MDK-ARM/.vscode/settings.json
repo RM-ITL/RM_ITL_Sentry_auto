@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "referee.h": "c",
+        "custom_ui_draw.h": "c",
+        "referee_usart_task.h": "c",
+        "remote_control.h": "c",
+        "chassis_task.h": "c",
+        "shoot_task.h": "c",
+        "gimbal_behaviour.h": "c",
+        "pid.h": "c"
+    }
+}

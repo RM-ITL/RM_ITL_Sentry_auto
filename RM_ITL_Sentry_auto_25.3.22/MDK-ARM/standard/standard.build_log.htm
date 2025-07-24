@@ -1,0 +1,123 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¶ÃVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a …ÚŒƒÃœ, a, LIC=HN0AE-5GNSQ-CXMU6-DWLR6-Y7SG1-NJRPB
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  D:\Keil5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.40.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\…ÚŒƒÃœ\Desktop\RM_ITL_Sentry_auto_25.3.22\RM_ITL_Sentry_auto_25.3.22\MDK-ARM\standard.uvprojx
+Project File Date:  06/24/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil5\ARM\ARMCC\Bin'
+Build target 'Sentry'
+compiling chassis_task.c...
+..\Task\chassis_task.c(409): warning:  #223-D: function "super_cap_send_power" declared implicitly
+      super_cap_send_power(robot_state.chassis_power_limit * 100);
+..\Task\chassis_task.c: 1 warning, 0 errors
+compiling chassis_power_control.c...
+..\application\chassis_power_control.c(172): warning:  #550-D: variable "total_current_limit"  was set but never used
+      float total_current_limit = 0.0f;
+..\application\chassis_power_control.c(173): warning:  #177-D: variable "total_current"  was declared but never referenced
+      float total_current = 0.0f;
+..\application\chassis_power_control.c: 2 warnings, 0 errors
+compiling gimbal_behaviour.c...
+..\application\gimbal_behaviour.c(341): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      rc_x_q=rc_x_q*0.93+0.07*rc_x;
+..\application\gimbal_behaviour.c(342): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      rc_y_q=rc_y_q*0.93+0.07*rc_y;
+..\application\gimbal_behaviour.c(583): warning:  #1-D: last line of file ends without a newline
+  }
+..\application\gimbal_behaviour.c(408): warning:  #550-D: variable "h"  was set but never used
+      float h = 0;
+..\application\gimbal_behaviour.c: 4 warnings, 0 errors
+compiling CAN_receive.c...
+compiling gimbal_task.c...
+..\Task\gimbal_task.c(427): warning:  #550-D: variable "auto_yaw_target"  was set but never used
+      static float auto_yaw_target = 0.0f;
+..\Task\gimbal_task.c(428): warning:  #550-D: variable "auto_pitch_target"  was set but never used
+      static float auto_pitch_target = 0.0f;
+..\Task\gimbal_task.c(517): warning:  #177-D: function "gimbal_relative_angle_limit"  was declared but never referenced
+  static void gimbal_relative_angle_limit(gimbal_motor_t *gimbal_motor, float add)
+..\Task\gimbal_task.c(592): warning:  #177-D: function "gimbal_motor_auto_control"  was declared but never referenced
+  static void gimbal_motor_auto_control(gimbal_motor_t *gimbal_motor)
+..\Task\gimbal_task.c(611): warning:  #177-D: function "gimbal_motor_relative_angle_control"  was declared but never referenced
+  static void gimbal_motor_relative_angle_control(gimbal_motor_t *gimbal_motor)
+..\Task\gimbal_task.c: 5 warnings, 0 errors
+compiling USART_receive.c...
+compiling custom_ui_draw.c...
+compiling main.c...
+..\User\Src\main.c(136): warning:  #223-D: function "user_usart_init" declared implicitly
+    user_usart_init(); //‰∏é‰∏ä‰ΩçÊú∫ÈÄö‰ø°‰∏≤Âè£ÂàùÂßãÂå?
+..\User\Src\main.c: 1 warning, 0 errors
+compiling freertos.c...
+..\Task\send_task.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\User\Src\freertos.c: 1 warning, 0 errors
+compiling shoot_task.c...
+..\Task\shoot_task.c(114): warning:  #1295-D: Deprecated declaration servo_init - give arg types
+  static void servo_init();
+..\Task\shoot_task.c: 1 warning, 0 errors
+compiling chassis_behaviour.c...
+..\application\chassis_behaviour.c(254): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        gimbal_control.gimbal_yaw_motor.absolute_angle_set -= PI / 106.5;
+..\application\chassis_behaviour.c(329): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      gimbal_control.gimbal_yaw_motor.absolute_angle_set = gimbal_control.gimbal_yaw_motor.absolute_angle_set + PI / 2.0;
+..\application\chassis_behaviour.c(336): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      gimbal_control.gimbal_yaw_motor.absolute_angle_set = gimbal_control.gimbal_yaw_motor.absolute_angle_set - PI / 2.0;
+..\application\chassis_behaviour.c(528): warning:  #550-D: variable "sin_yaw"  was set but never used
+    float sin_yaw = 0.0f, cos_yaw = 0.0f;
+..\application\chassis_behaviour.c(528): warning:  #550-D: variable "cos_yaw"  was set but never used
+    float sin_yaw = 0.0f, cos_yaw = 0.0f;
+..\application\chassis_behaviour.c(581): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      chassis_move_rc_to_vector->wz_set = 0.7 * f * CHASSIS_TOP_SPEED;//0.7 old data 
+..\application\chassis_behaviour.c(561): warning:  #177-D: variable "angle_set"  was declared but never referenced
+    float vx_set = 0.0f, vy_set = 0.0f, angle_set = 0.0f;
+..\application\chassis_behaviour.c(698): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        vx_set_channel = chassis_move_rc_to_vector->vx_max_speed * 1.5;
+..\application\chassis_behaviour.c(721): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        vx_set_channel = chassis_move_rc_to_vector->vx_min_speed * 1.5;
+..\application\chassis_behaviour.c(808): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    vx_set_channel_q=vx_set_channel_q*0.95+0.05*vx_set_channel;
+..\application\chassis_behaviour.c(808): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    vx_set_channel_q=vx_set_channel_q*0.95+0.05*vx_set_channel;
+..\application\chassis_behaviour.c(809): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    vy_set_channel_q=vy_set_channel_q*0.95+0.05*vy_set_channel;
+..\application\chassis_behaviour.c(809): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+    vy_set_channel_q=vy_set_channel_q*0.95+0.05*vy_set_channel;
+..\application\chassis_behaviour.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=81656 RO-data=3664 RW-data=1032 ZI-data=42752  
+FromELF: creating hex file...
+".\standard\standard.axf" - 0 Error(s), 28 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.3.0.0.pack
+                Keil.STM32F4xx_DFP.3.0.0
+                STMicroelectronics STM32F4 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:01:34
+</pre>
+</body>
+</html>

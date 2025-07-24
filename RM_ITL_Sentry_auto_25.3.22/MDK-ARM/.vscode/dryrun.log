@@ -1,0 +1,6 @@
+make.exe --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/cygdrive/c/Users/玺彩/Desktop/Stantard-6-18-无电容-正确代码/MDK-ARM'
+make: Leaving directory '/cygdrive/c/Users/玺彩/Desktop/Stantard-6-18-无电容-正确代码/MDK-ARM'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+

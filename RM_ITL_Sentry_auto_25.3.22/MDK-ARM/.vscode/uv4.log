@@ -1,0 +1,13 @@
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Keil_v5\ARM\AC506u7\Bin'
+Build target 'standard'
+compiling shoot_task.c...
+..\Task\shoot_task.h(70): warning:  #47-D: incompatible redefinition of macro "FRICTION_MAX_OUT"  (declared at line 42)
+  #define FRICTION_MAX_OUT 5500       //持续发射电流限幅
+..\Task\shoot_task.c(106): warning:  #1295-D: Deprecated declaration servo_init - give arg types
+  static void servo_init();
+..\Task\shoot_task.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=83960 RO-data=3664 RW-data=928 ZI-data=42440  
+FromELF: creating hex file...
+".\standard\standard.axf" - 0 Error(s), 2 Warning(s).
+Build Time Elapsed:  00:00:07
